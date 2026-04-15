@@ -1,4 +1,4 @@
-# Wallet and Transaction Ledger Service
+# Sweepstakes wallet for a website
 
 A production-ready backend service that manages user wallets for two currencies: Gold Coins (GC) and Sweeps Coins (SC). All balance changes are tracked in an immutable transaction ledger with full atomicity guarantees.
 
@@ -17,7 +17,7 @@ A production-ready backend service that manages user wallets for two currencies:
 - **Transaction-Based Architecture**: All balances and statistics calculated from the ledger
 - **Idempotency Protection**: All financial operations prevent duplicates via idempotency keys
 - **Atomic Operations**: All multi-step operations wrapped in database transactions
-- **Cursor-based Pagination**: Efficient transaction history queries
+- **Keyset pagination**: Efficient transaction history queries
 - **Type-safe Error Handling**: Custom error types with proper error wrapping
 
 ## 🚀 Quick Start
@@ -33,8 +33,8 @@ No Go, PostgreSQL, or other dependencies required - everything runs in container
 
 ```bash
 # Clone the repository
-git clone https://github.com/jerrygao777/wallet-transaction-ledger-service.git
-cd wallet-transaction-ledger-service
+git clone https://github.com/g8tsz/sweepstakes-wallet-for-a-website.git
+cd sweepstakes-wallet-for-a-website
 
 # Start the application
 docker-compose up --build
